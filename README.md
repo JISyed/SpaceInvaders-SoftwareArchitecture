@@ -6,3 +6,5 @@ irrKlang.dll is from [Ambiera](http://www.ambiera.com/ambiera.html) and is used 
 Fonts, sprites, and sounds are *not* made by me
 
 Loading project requires at least Visual Studios 2012
+
+![Gameplay Screenshot](https://github.com/JISyed/SpaceInvaders-SoftwareArchitecture/blob/master/Screenshots/si_gameplay.png)
