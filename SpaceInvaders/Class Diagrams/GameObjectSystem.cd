@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="When a new GameObject is constructed, it gets a new id from UniqueObjectId automagically">
+    <Position X="8.611" Y="2.183" Height="0.718" Width="2.096" />
+  </Comment>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObject">
+    <Position X="6.25" Y="3.25" Width="2" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Field Name="batchName" Hidden="true" />
+      <Property Name="BatchName" Hidden="true" />
+      <Field Name="collider" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Method Name="ctor" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Property Name="Height" Hidden="true" />
+      <Field Name="instanceId" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="OnMove" Hidden="true" />
+      <Method Name="OnPCSNewChild" Hidden="true" />
+      <Method Name="RecalculateCollider" Hidden="true" />
+      <Method Name="ReevaluateCollider" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="ResetAnimator" Hidden="true" />
+      <Method Name="SetColor" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Field Name="sprite" Hidden="true" />
+      <Field Name="wasAlreadyRemoved" Hidden="true" />
+      <Property Name="Width" Hidden="true" />
+      <Field Name="x" Hidden="true" />
+      <Field Name="y" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObjectSystem.GameObject.Name">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjectSystem\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="SpaceInvaders.PCSTreeNode" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="2.824" />
+        <Point X="7.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAQDAAACDCARJAAQAAAAIFAAwBAECkDQAIhg0AAAYAA=</HashCode>
+      <FileName>GameObjectSystem\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SpriteReference" />
+      <Property Name="Collider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjectHolder">
+    <Position X="3" Y="3.25" Width="2" />
+    <Members>
+      <Method Name="GameObjectHolder" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAABAAAAAAAIAAAIAAAAAAAAgAAgAAABAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjectHolder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjectManager">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Method Name="GameObjectManager" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.188" Y="1.062" />
+        <Point X="1.188" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAIBIAAAgAQAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjectManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.PCSTreeNode">
+    <Position X="6.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="AddSibling" Hidden="true" />
+      <Field Name="child" Hidden="true" />
+      <Method Name="OnPCSNewChild" Hidden="true" />
+      <Field Name="parent" Hidden="true" />
+      <Method Name="PCSTreeNode" Hidden="true" />
+      <Method Name="RemoveChildrenNodes" Hidden="true" />
+      <Field Name="sibling" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AABAAAIAAEAQEIBAAACAwAAAAAAAAABAAAAAAAAAQAA=</HashCode>
+      <FileName>PCSTreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Collider">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="Collider" Hidden="true" />
+      <Field Name="collisionSprite" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Field Name="gameObjectId" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Method Name="SetupCollisonSpriteProxy" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EABCAAAABBAAJAAAAAAEAEAABAAAAgCIAIAAgQMAYAA=</HashCode>
+      <FileName>GameObjectSystem\Collider.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="colliderBoundary" />
+      <Property Name="SpriteReference" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteProxy" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAABAAAQAAAAEAABAAAAAAAAABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul.Rect" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollisionProxy" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgQAQABAAAQAAAAEAABAAAAAAAEABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollisionProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.UniqueObjectId">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\UniqueObjectId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

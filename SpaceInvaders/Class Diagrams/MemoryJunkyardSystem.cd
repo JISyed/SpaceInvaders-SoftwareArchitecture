@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.MemoryJunkyardSystem.MemoryJunkBlock">
+    <Position X="3.25" Y="2.75" Width="1.75" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="MemoryJunkBlock" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.ListNode" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="2.062" />
+        <Point X="4" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>MemoryJunkyardSystem\MemoryJunkBlock.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="junk" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.MemoryJunkyardSystem.MemoryJunkyard">
+    <Position X="0.5" Y="2.75" Width="1.75" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Method Name="MemoryJunkyard" Hidden="true" />
+      <Field Name="wasNewJunkAdded" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedFromPoint="true">
+      <Path>
+        <Point X="1.375" Y="1.062" />
+        <Point X="1.375" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAgABAAAIAAQCAAAAAAAA=</HashCode>
+      <FileName>MemoryJunkyardSystem\MemoryJunkyard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="AbstractManager" Hidden="true" />
+      <Property Name="ActiveSize" Hidden="true" />
+      <Field Name="additionalReserveSize" Hidden="true" />
+      <Property Name="AdditionalReserveSize" Hidden="true" />
+      <Field Name="alreadyPreallocated" Hidden="true" />
+      <Method Name="BaseCreate" Hidden="true" />
+      <Method Name="BaseFind" Hidden="true" />
+      <Method Name="BaseRecycle" Hidden="true" />
+      <Method Name="Destroy" Hidden="true" />
+      <Method Name="DestroyEntireList" Hidden="true" />
+      <Method Name="DestroyFrontOfList" Hidden="true" />
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="initialReserveSize" Hidden="true" />
+      <Property Name="InitialReserveSize" Hidden="true" />
+      <Method Name="Move" Hidden="true" />
+      <Method Name="Preallocate" Hidden="true" />
+      <Property Name="ReservedSize" Hidden="true" />
+      <Property Name="TotalSize" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true" HideInheritanceLine="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true" HideInheritanceLine="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

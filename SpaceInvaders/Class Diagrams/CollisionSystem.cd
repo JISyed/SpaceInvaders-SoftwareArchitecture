@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.CollisionSystem.CollisionPairEvaluator">
+    <Position X="3.75" Y="2.5" Width="2" />
+    <Members>
+      <Property Name="CollisionName" Hidden="true" />
+      <Method Name="CollisionPairEvaluator" Hidden="true" />
+      <Property Name="FirstCollisionRoot" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Property Name="SecondCollisionRoot" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="SetNumberOfChecks" Hidden="true" />
+      <Property Name="ShouldScanEntireFirstTree" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.CollisionSystem.CollisionPairEvaluator.Name">
+        <TypeIdentifier>
+          <NewMemberFileName>CollisionSystem\CollisionPairEvaluator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAgiBAQAAAAAEABJAAAGAwIAQBAAQgAIBAA=</HashCode>
+      <FileName>CollisionSystem\CollisionPairEvaluator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="subscription" />
+      <Field Name="collisionTreeRootFirst" />
+      <Field Name="collisionTreeRootSecond" />
+      <Field Name="firstTvr" />
+      <Field Name="secondTvr" />
+      <Field Name="iterator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.PCSTraverser">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="IsThereChild" Hidden="true" />
+      <Method Name="IsThereSibling" Hidden="true" />
+      <Method Name="PCSTraverser" Hidden="true" />
+      <Method Name="Reassign" Hidden="true" />
+      <Field Name="treeRoot" Hidden="true" />
+    </Members>
+    <AssociationLine Name="currentNode" Type="SpaceInvaders.PCSTreeNode" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.625" />
+        <Point X="8.875" Y="2.625" />
+        <Point X="8.875" Y="4.437" />
+        <Point X="10.5" Y="4.437" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AICgAAAAAAAAAAAAABgFEAAAAAAAEAAAQAAAAAIAAAA=</HashCode>
+      <FileName>PCSTraverser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.PCSIterator">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="PCSIterator" Hidden="true" />
+      <Method Name="privGetNext" Hidden="true" />
+      <Method Name="Reassign" Hidden="true" />
+      <Field Name="treeRoot" Hidden="true" />
+    </Members>
+    <AssociationLine Name="currentNode" Type="SpaceInvaders.PCSTreeNode" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="5.03" />
+        <Point X="8.875" Y="5.03" />
+        <Point X="8.875" Y="4.437" />
+        <Point X="10.5" Y="4.437" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AICAACAAAAAAAAAAABAFAAIAAAAAAAIAQAAAAAAAAAA=</HashCode>
+      <FileName>PCSIterator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObject">
+    <Position X="10.5" Y="5.25" Width="1.75" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Field Name="batchName" Hidden="true" />
+      <Property Name="BatchName" Hidden="true" />
+      <Field Name="collider" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Property Name="Color" Hidden="true" />
+      <Method Name="ctor" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Property Name="Height" Hidden="true" />
+      <Property Name="Id" Hidden="true" />
+      <Field Name="instanceId" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Property Name="ObjectName" Hidden="true" />
+      <Method Name="OnDestroy" Hidden="true" />
+      <Method Name="OnMove" Hidden="true" />
+      <Method Name="OnPCSNewChild" Hidden="true" />
+      <Method Name="OnPCSUnlink" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="ResetAnimator" Hidden="true" />
+      <Method Name="SetColor" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="SetPosition" Hidden="true" />
+      <Method Name="SetSprite" Hidden="true" />
+      <Field Name="sprite" Hidden="true" />
+      <Property Name="SpriteReference" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="UpdateInternalSpriteData" Hidden="true" />
+      <Field Name="wasAlreadyRemoved" Hidden="true" />
+      <Property Name="Width" Hidden="true" />
+      <Field Name="x" Hidden="true" />
+      <Field Name="y" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObjectSystem.GameObject.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjectSystem\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="SpaceInvaders.PCSTreeNode" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="4.812" />
+        <Point X="11.25" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAQDAAACDCARJAAQAAAAIFAAwBAECkDQAIhg0AAAYAA=</HashCode>
+      <FileName>GameObjectSystem\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Collider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionSystem.CollisionSubscription">
+    <Position X="7" Y="8" Width="1.75" />
+    <Members>
+      <Property Name="CollisionName" Hidden="true" />
+      <Method Name="CollisionSubscription" Hidden="true" />
+      <Method Name="Search" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAgAAAAAAAAAAAAABAgBAAAAgQAAgEAA=</HashCode>
+      <FileName>CollisionSystem\CollisionSubscription.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listOfSubscribers" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Collider">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="collisionSprite" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Property Name="Color" Hidden="true" />
+      <Field Name="gameObjectId" Hidden="true" />
+      <Property Name="Height" Hidden="true" />
+      <Property Name="Id" Hidden="true" />
+      <Property Name="IsNull" Hidden="true" />
+      <Method Name="MakeColliderNull" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Method Name="SetupCollisonSpriteProxy" Hidden="true" />
+      <Property Name="Width" Hidden="true" />
+      <Property Name="X" Hidden="true" />
+      <Property Name="Y" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EABCAAAABBAAJAAAAAAEAEAABAAAAgCIAIAAgQMAYAA=</HashCode>
+      <FileName>GameObjectSystem\Collider.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="colliderBoundary" />
+      <Property Name="SpriteReference" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollisionProxy" Collapsed="true">
+    <Position X="16.25" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgQAQABAAAQAAAAEAABAAAAAAAEABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollisionProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.PCSTreeNode" Collapsed="true">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAIAAEAQEIBAAACAwAAAAAAAAABAAAAAAAAAQAA=</HashCode>
+      <FileName>PCSTreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul.Rect" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.ContainerSystem.ContainerList" Collapsed="true">
+    <Position X="10.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgAAAgIAAAAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>ContainerSystem\ContainerList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionSystem.CollisonSubscriberHolder">
+    <Position X="10" Y="10" Width="2" />
+    <Members>
+      <Method Name="CollisonSubscriberHolder" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Field Name="subscriber" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAJAAAACAAAACAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>CollisionSystem\CollisonSubscriberHolder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Subscriber" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ContainerSystem.ContainerNode" Collapsed="true">
+    <Position X="10.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAJAAAAAAAAAAAAAAAAAAAAABBAAIABAA=</HashCode>
+      <FileName>ContainerSystem\ContainerNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionSystem.CollisionPairFactory">
+    <Position X="0.5" Y="4.5" Width="1.75" />
+    <Members>
+      <Method Name="CollisionPairFactory" Hidden="true" />
+      <Method Name="FactoryMethod" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollisionSystem\CollisionPairFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionSystem.CollisonPairManager">
+    <Position X="0.5" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="CollisonPairManager" Hidden="true" />
+      <Method Name="FillReserve" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="1.062" />
+        <Point X="1.25" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAABIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>CollisionSystem\CollisonPairManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.AlienCoordinator" Collapsed="true">
+    <Position X="12.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oIQxAAARJCBAAQJAAgoYEICGAQAAAAEQDEADFBkQgGA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\AlienCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.PlayerShip" Collapsed="true" HideInheritanceLine="true">
+    <Position X="14.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBBAAAACAAAAIAIIAAAAABAAAAAQEAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\PlayerShip.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.UFOCoordinator" Collapsed="true" HideInheritanceLine="true">
+    <Position X="16" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIQBAAgACCAAAAIAAQEAEQQACAEAEAEAAIAQMAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\UFOCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SpaceInvaders.CollisionSystem.ICollisionSubscriber">
+    <Position X="14" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollisionSystem\ICollisonSubscriber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

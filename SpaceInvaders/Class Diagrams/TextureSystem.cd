@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.TextureSystem.TextureManager">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Method Name="TextureManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAABIAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>TextureSystem\TextureManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.TextureSystem.Texture">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="Texture" Hidden="true" />
+      <Property Name="TextureMap" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.TextureSystem.Texture.Name">
+        <TypeIdentifier>
+          <NewMemberFileName>TextureSystem\TextureNode.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAABAAAAAQAAACAEAAAAAAAAQAgABAA=</HashCode>
+      <FileName>TextureSystem\TextureNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="textureMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul.Texture" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

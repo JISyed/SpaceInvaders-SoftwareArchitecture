@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Loads all audio in the beginning of the game">
+    <Position X="5.926" Y="1.747" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="SpaceInvaders.AudioSystem.AudioSource">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <Members>
+      <Property Name="AudioName" Hidden="true" />
+      <Method Name="AudioSource" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Property Name="IsPaused" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.AudioSystem.AudioSource.Name">
+        <TypeIdentifier>
+          <NewMemberFileName>AudioSystem\AudioSource.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAABAAAAAIAAAIAAAAEAACEoEAgAAAELAA=</HashCode>
+      <FileName>AudioSystem\AudioSource.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="soundClip" />
+      <Field Name="fileName" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.AudioSystem.AudioSourceManager">
+    <Position X="0.5" Y="2.75" Width="1.75" />
+    <Members>
+      <Method Name="AudioSourceManager" Hidden="true" />
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="1.062" />
+        <Point X="1.25" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAABAAAAAABIAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>AudioSystem\AudioSourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Azul.Sound">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="op_Assign" Hidden="true" />
+      <Method Name="Sound" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpaceInvaders.AudioSystem.AudioFactory">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="AudioFactory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AudioSystem\AudioFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

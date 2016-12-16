@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="← Creates">
+    <Position X="6.116" Y="5.897" Height="0.331" Width="0.933" />
+  </Comment>
+  <Comment CommentText="Creates&#xD;&#xA;   ↓">
+    <Position X="14.529" Y="7.655" Height="0.479" Width="0.7" />
+  </Comment>
+  <Comment CommentText="         Calls →">
+    <Position X="17.067" Y="4.873" Height="0.331" Width="1.512" />
+  </Comment>
+  <Comment CommentText="         Calls ↑">
+    <Position X="18.35" Y="6.404" Height="0.331" Width="1.512" />
+  </Comment>
+  <Comment CommentText="← Creates">
+    <Position X="3.164" Y="4.976" Height="0.331" Width="0.933" />
+  </Comment>
+  <Comment CommentText="Creates →">
+    <Position X="3.169" Y="3.33" Height="0.331" Width="0.892" />
+  </Comment>
+  <Class Name="SpaceInvaders.States.PlayerStates.PlayerState">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <Members>
+      <Property Name="Context" Hidden="true" />
+      <Method Name="PlayerState" Hidden="true" />
+      <Method Name="Respawn" Hidden="true" />
+      <Method Name="Restart" Hidden="true" />
+    </Members>
+    <AssociationLine Name="strMoveLeft" Type="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategy" FixedToPoint="true">
+      <Path>
+        <Point X="10.75" Y="2.625" />
+        <Point X="14.5" Y="2.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="strMoveRight" Type="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategy" FixedFromPoint="true">
+      <Path>
+        <Point X="10.75" Y="2.801" />
+        <Point X="14.5" Y="2.801" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="strShoot" Type="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategy" FixedToPoint="true">
+      <Path>
+        <Point X="10.75" Y="2.938" />
+        <Point X="14.5" Y="2.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAiAkAAAgIABAAAAARAAAAADAAAEAAoQAIACAACAAA=</HashCode>
+      <FileName>States\PlayerStates\PlayerState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="context" />
+      <Field Name="strMoveLeft" />
+      <Field Name="strMoveRight" />
+      <Field Name="strShoot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.States.PlayerStates.PlayerStateActive">
+    <Position X="8.5" Y="9" Width="1.75" />
+    <Members>
+      <Method Name="PlayerStateActive" Hidden="true" />
+      <Method Name="Respawn" Hidden="true" />
+      <Method Name="Restart" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.States.PlayerStates.PlayerState" ManuallyRouted="true">
+      <Path>
+        <Point X="10" Y="4.478" />
+        <Point X="10" Y="5.388" />
+        <Point X="9.375" Y="5.388" />
+        <Point X="9.375" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAkAAAAAABAAAAAAAAAAABAAAEAAAAAAAAAACAAA=</HashCode>
+      <FileName>States\PlayerStates\PlayerStateActive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.States.PlayerStates.PlayerStateDead">
+    <Position X="7.25" Y="5.75" Width="1.75" />
+    <Members>
+      <Method Name="~PlayerStateDead" Hidden="true" />
+      <Method Name="PlayerStateDead" Hidden="true" />
+      <Method Name="Respawn" Hidden="true" />
+      <Method Name="Restart" Hidden="true" />
+      <Property Name="TimerEvent" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.States.PlayerStates.PlayerState" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="4.478" />
+        <Point X="10" Y="5.367" />
+        <Point X="8.781" Y="5.367" />
+        <Point X="8.781" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EIAAAkgAgAAABAAAAAAAAAAABAAAEAAAAAACAAACAAA=</HashCode>
+      <FileName>States\PlayerStates\PlayerStateDead.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="deathSound" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.States.PlayerStates.PlayerStateNoAmmo">
+    <Position X="10.75" Y="9" Width="1.75" />
+    <Members>
+      <Method Name="PlayerStateNoAmmo" Hidden="true" />
+      <Method Name="Respawn" Hidden="true" />
+      <Method Name="Restart" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.States.PlayerStates.PlayerState" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="4.478" />
+        <Point X="10" Y="5.367" />
+        <Point X="11.75" Y="5.367" />
+        <Point X="11.75" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAkAAAAAABAAAAAAAAAAABAAAEAAAAAAAAAACAAA=</HashCode>
+      <FileName>States\PlayerStates\PlayerStateNoAmmo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.States.PlayerStates.PlayerStateStandby">
+    <Position X="9.75" Y="5.75" Width="1.75" />
+    <Members>
+      <Method Name="PlayerStateStandby" Hidden="true" />
+      <Method Name="Respawn" Hidden="true" />
+      <Method Name="Restart" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAAAAkAAAAAABAAAAAAAAAAABAAAEAAAAAAAAAACAAA=</HashCode>
+      <FileName>States\PlayerStates\PlayerStateStandby.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategy">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="PlayerStrategy" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+    </Members>
+    <AssociationLine Name="State" Type="SpaceInvaders.States.PlayerStates.PlayerState" FixedFromPoint="true">
+      <Path>
+        <Point X="14.5" Y="3.375" />
+        <Point X="10.75" Y="3.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgABAAAAAA=</HashCode>
+      <FileName>Strategies\PlayerStrategies\PlayerStrategy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategyMoveLeft">
+    <Position X="15" Y="4.5" Width="2" />
+    <Members>
+      <Method Name="PlayerStrategyMoveLeft" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Strategies\PlayerStrategies\PlayerStrategyMoveLeft.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategyMoveRight">
+    <Position X="16.25" Y="6.25" Width="2" />
+    <Members>
+      <Method Name="PlayerStrategyMoveRight" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Strategies\PlayerStrategies\PlayerStrategyMoveRight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategyNone">
+    <Position X="12.75" Y="4.5" Width="1.75" />
+    <Members>
+      <Method Name="PlayerStrategyNone" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Strategies\PlayerStrategies\PlayerStrategyNone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategyShoot">
+    <Position X="14" Y="6.25" Width="1.75" />
+    <Members>
+      <Method Name="PlayerStrategyShoot" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.Strategies.PlayerStrategies.PlayerStrategy" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="3.603" />
+        <Point X="15.25" Y="4.125" />
+        <Point X="14.812" Y="4.125" />
+        <Point X="14.812" Y="6.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Strategies\PlayerStrategies\PlayerStrategyShoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.PlayerShip">
+    <Position X="4.25" Y="1.5" Width="1.75" />
+    <Members>
+      <Method Name="PlayerShip" Hidden="true" />
+      <Field Name="shouldBeDeleted" Hidden="true" />
+      <Field Name="speed" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAQBBAAAACAAAAIAIIAAAAABAAAAAQEAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\PlayerShip.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentState" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.AudioSystem.AudioSource" Collapsed="true">
+    <Position X="5.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAABAAAAAIAAAIAAAAEAACEoEAgAAAELAA=</HashCode>
+      <FileName>AudioSystem\AudioSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.PlayerRespawner">
+    <Position X="4.25" Y="4.75" Width="1.75" />
+    <Members>
+      <Method Name="~PlayerRespawner" Hidden="true" />
+      <Method Name="PlayerRespawner" Hidden="true" />
+      <Field Name="respawnWait" Hidden="true" />
+      <Field Name="timedEvent" Hidden="true" />
+      <Property Name="TimerEvent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAA=</HashCode>
+      <FileName>GameObjectSystem\PlayerRespawner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.InputSystem.Input">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InputSystem\Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.PlayerLaser">
+    <Position X="14.25" Y="8.25" Width="1.5" />
+    <Members>
+      <Method Name="PlayerLaser" Hidden="true" />
+    </Members>
+    <AssociationLine Name="shootingSound" Type="SpaceInvaders.AudioSystem.AudioSource" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="10.312" />
+        <Point X="13.534" Y="10.312" />
+        <Point X="13.534" Y="11.431" />
+        <Point X="6.562" Y="11.431" />
+        <Point X="6.562" Y="10.191" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAEAAAAAAAAAAAACAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\PlayerLaser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="shootingSound" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.PlayerFactory">
+    <Position X="1" Y="2.75" Width="2" />
+    <Members>
+      <Method Name="PlayerFactory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAUQQACAAAAAAAAAAAACAAAAAAAAAAgAIAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\Factories\PlayerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.TimerSystem.TimedEvent">
+    <Position X="3" Y="4" Width="2" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SetCommand" Hidden="true" />
+      <Method Name="SetTimeStamp" Hidden="true" />
+      <Method Name="TimedEvent" Hidden="true" />
+      <Property Name="TimeStamp" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.TimerSystem.TimedEvent.Name">
+        <TypeIdentifier>
+          <NewMemberFileName>TimerSystem\TimedEvent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CKAAAACAAAAABAAAAACAAowAAAQEAAAAAAAAAAAABCA=</HashCode>
+      <FileName>TimerSystem\TimedEvent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="command" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.TimerSystem.TimedEventManager">
+    <Position X="0.5" Y="1.75" Width="1.75" />
+    <Members>
+      <Method Name="NewBaseCreate" Hidden="true" />
+      <Method Name="NewBaseFind" Hidden="true" />
+      <Method Name="NewBaseRecycle" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="1.062" />
+        <Point X="1.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IBQgEAAAAAAAAAAAAAAAAAAAAAJAAEAgAQAiAABEIAA=</HashCode>
+      <FileName>TimerSystem\TimedEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="BaseReset" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Property Name="Id" Hidden="true" />
+      <Field Name="instanceId" Hidden="true" />
+      <Method Name="ListNode" Hidden="true" />
+      <Field Name="next" Hidden="true" />
+      <Field Name="prev" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Property Name="Head" Hidden="true" />
+      <Field Name="listSize" Hidden="true" />
+      <Method Name="PeekFront" Hidden="true" />
+      <Method Name="Pop" Hidden="true" />
+      <Method Name="PopFront" Hidden="true" />
+      <Method Name="PushFront" Hidden="true" />
+      <Property Name="Size" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.AnimationSystem.Animation">
+    <Position X="5.5" Y="6.25" Width="1.75" />
+    <Members>
+      <Method Name="Animation" Hidden="true" />
+      <Method Name="AssignNewIntervalTime" Hidden="true" />
+      <Method Name="CancelTimedAnimation" Hidden="true" />
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="currentUnit" Hidden="true" />
+      <Method Name="DetachEverything" Hidden="true" />
+      <Property Name="DidAnimationEnd" Hidden="true" />
+      <Field Name="intervalTime" Hidden="true" />
+      <Field Name="isLooping" Hidden="true" />
+      <Method Name="PointToStartingAnimationUnit" Hidden="true" />
+      <Field Name="requestedNewIntervalTime" Hidden="true" />
+      <Method Name="UpdateIntervalTime" Hidden="true" />
+    </Members>
+    <AssociationLine Name="TimerEvent" Type="SpaceInvaders.TimerSystem.TimedEvent" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="6.25" />
+        <Point X="7" Y="5.688" />
+        <Point X="5" Y="5.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIACCAggAgAAAAACABAyggQgAAAAAAAAAAAAIAAAECA=</HashCode>
+      <FileName>AnimationSystem\Animation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TimerEvent" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.AlienRespawner">
+    <Position X="7.5" Y="6.25" Width="1.75" />
+    <Members>
+      <Method Name="~AlienRespawner" Hidden="true" />
+      <Method Name="AlienRespawner" Hidden="true" />
+      <Field Name="timedEvent" Hidden="true" />
+    </Members>
+    <AssociationLine Name="TimerEvent" Type="SpaceInvaders.TimerSystem.TimedEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.906" Y="6.25" />
+        <Point X="8.906" Y="5.688" />
+        <Point X="5" Y="5.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjectSystem\AlienRespawner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TimerEvent" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.PlayerRespawner">
+    <Position X="9.5" Y="6.25" Width="1.75" />
+    <Members>
+      <Method Name="~PlayerRespawner" Hidden="true" />
+      <Method Name="PlayerRespawner" Hidden="true" />
+      <Field Name="respawnWait" Hidden="true" />
+      <Field Name="timedEvent" Hidden="true" />
+    </Members>
+    <AssociationLine Name="TimerEvent" Type="SpaceInvaders.TimerSystem.TimedEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.375" Y="6.25" />
+        <Point X="10.375" Y="5.688" />
+        <Point X="5" Y="5.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAA=</HashCode>
+      <FileName>GameObjectSystem\PlayerRespawner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TimerEvent" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.GameOverDelayEvent">
+    <Position X="11.5" Y="6.25" Width="1.75" />
+    <Members>
+      <Method Name="~GameOverDelayEvent" Hidden="true" />
+      <Field Name="gameOverDelay" Hidden="true" />
+      <Method Name="GameOverDelayEvent" Hidden="true" />
+      <Field Name="timedEvent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="TimerEvent" Type="SpaceInvaders.TimerSystem.TimedEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.375" Y="6.25" />
+        <Point X="12.375" Y="5.688" />
+        <Point X="5" Y="5.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAgAAAAA=</HashCode>
+      <FileName>SceneSystem\GameOverDelayEvent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TimerEvent" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SpaceInvaders.ICommandable">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICommandable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

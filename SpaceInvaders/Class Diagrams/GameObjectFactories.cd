@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Creates&#xD;&#xA;      ↓">
+    <Position X="1.88" Y="4.675" Height="0.537" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Creates&#xD;&#xA;      ↓">
+    <Position X="4.362" Y="4.654" Height="0.537" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Creates&#xD;&#xA;      ↓">
+    <Position X="6.67" Y="4.657" Height="0.537" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Creates&#xD;&#xA;      ↓">
+    <Position X="8.905" Y="4.666" Height="0.537" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Creates&#xD;&#xA;      ↓">
+    <Position X="11.155" Y="4.678" Height="0.537" Width="0.7" />
+  </Comment>
+  <Comment CommentText="The Client">
+    <Position X="6.607" Y="2.355" Height="0.381" Width="0.794" />
+  </Comment>
+  <Comment CommentText="Which later can create&#xD;&#xA;                    ↓">
+    <Position X="1.442" Y="8.621" Height="0.537" Width="1.598" />
+  </Comment>
+  <Comment CommentText="Which then creates&#xD;&#xA;                ↓">
+    <Position X="6.28" Y="7.601" Height="0.537" Width="1.358" />
+  </Comment>
+  <Comment CommentText="Which later can create&#xD;&#xA;                    ↓">
+    <Position X="8.448" Y="6.582" Height="0.537" Width="1.598" />
+  </Comment>
+  <Comment CommentText="Which later can create&#xD;&#xA;                    ↓">
+    <Position X="10.676" Y="6.571" Height="0.537" Width="1.598" />
+  </Comment>
+  <Comment CommentText="Which later will create&#xD;&#xA;                    ↓">
+    <Position X="8.483" Y="8.078" Height="0.537" Width="1.598" />
+  </Comment>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.UFO" Collapsed="true">
+    <Position X="10.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAIAQAAAAAAAAAAAAAQAAAAAAEAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\UFO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.UFOCoordinator" Collapsed="true">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIQBAAgACCAAAAIAAQEAEQQACAEAEAEAAIAQMAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\UFOCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.AlienColumn" Collapsed="true">
+    <Position X="1.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\AlienColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.AlienCoordinator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>oIQxAAARJCBAAQJAAgoYEICGAQAAAAEQDEADFBkQgGA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\AlienCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.AlienLaser" Collapsed="true">
+    <Position X="2.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\AlienLaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.Aliens" Collapsed="true">
+    <Position X="1.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQFAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\Aliens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.DeadAlien" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIQBAAgAgCAAQAAAAAAAABAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\DeadAlien.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.DeadPlayerLaser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIQBAAgAgCAAQAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\DeadPlayerLaser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.PlayerLaser" Collapsed="true">
+    <Position X="8.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAEAAAAAAAAAAAACAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\PlayerLaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.PlayerShip" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBBAAAACAAAAIAIIAAAAABAAAAAQEAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\PlayerShip.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.ShieldBarricade" Collapsed="true">
+    <Position X="6.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBBAAAACIAABAIAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\ShieldBarricade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.ShieldPiece" Collapsed="true">
+    <Position X="6.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\ShieldPiece.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.ShieldPieceColumn" Collapsed="true">
+    <Position X="6.25" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\ShieldPieceColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.ShieldRoot" Collapsed="true">
+    <Position X="6.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\ShieldRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.Wall" Collapsed="true">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.AlienFactory">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="AddAlienRootToCollisionSystem" Hidden="true" />
+      <Method Name="AlienFactory" Hidden="true" />
+      <Field Name="batchName" Hidden="true" />
+      <Field Name="CollisonColor" Hidden="true" />
+      <Field Name="Columns" Hidden="true" />
+      <Field Name="FrameInterval" Hidden="true" />
+      <Field Name="InitX" Hidden="true" />
+      <Field Name="InitY" Hidden="true" />
+      <Method Name="LoadAlienRow" Hidden="true" />
+      <Method Name="LoadFlipAnimations" Hidden="true" />
+      <Method Name="LoadGameObjects" Hidden="true" />
+      <Method Name="LoadIndividualAlien" Hidden="true" />
+      <Method Name="LoadSpriteAnimations" Hidden="true" />
+      <Field Name="MaxDissent" Hidden="true" />
+      <Field Name="Rows" Hidden="true" />
+      <Field Name="XGap" Hidden="true" />
+      <Field Name="YGap" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AICEAAAAQADAAEAAAAEAACgGCAAAAEAAAAAAIAhAAgA=</HashCode>
+      <FileName>GameObjectSystem\Factories\AlienFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.PlayerFactory">
+    <Position X="8.5" Y="3.25" Width="1.75" />
+    <Members>
+      <Field Name="CollisonColor" Hidden="true" />
+      <Field Name="DeathAnimationInterval" Hidden="true" />
+      <Field Name="InitX" Hidden="true" />
+      <Field Name="InitY" Hidden="true" />
+      <Method Name="LoadSpriteAnimations" Hidden="true" />
+      <Method Name="PlayerFactory" Hidden="true" />
+      <Field Name="sceneRef" Hidden="true" />
+      <Method Name="SetupCollisionHierarchy" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAUQQACAAAAAAAAAAAACAAAAAAAAAAgAIAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\Factories\PlayerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.ShieldFactory">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="batchName" Hidden="true" />
+      <Field Name="InitX" Hidden="true" />
+      <Field Name="InitY" Hidden="true" />
+      <Method Name="LoadGameObjects" Hidden="true" />
+      <Field Name="NumOfBarricades" Hidden="true" />
+      <Method Name="SetupCollisions" Hidden="true" />
+      <Method Name="ShieldFactory" Hidden="true" />
+      <Field Name="XGap" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AECEAAAAAAAAAAAAAIAAAAACAAAAAEAAIAAAAAAAAgA=</HashCode>
+      <FileName>GameObjectSystem\Factories\ShieldFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.UFOFactory">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\Factories\UFOFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.WallFactory">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="CeilingY" Hidden="true" />
+      <Field Name="CollisonColor" Hidden="true" />
+      <Method Name="CreateCeiling" Hidden="true" />
+      <Method Name="CreateFloor" Hidden="true" />
+      <Method Name="CreateSideWalls" Hidden="true" />
+      <Field Name="FloorY" Hidden="true" />
+      <Field Name="HorizontalWallHeight" Hidden="true" />
+      <Field Name="HorizontalWallWidth" Hidden="true" />
+      <Field Name="HorizontalWallX" Hidden="true" />
+      <Field Name="LeftWallX" Hidden="true" />
+      <Field Name="RightWallX" Hidden="true" />
+      <Field Name="VerticalWallHeight" Hidden="true" />
+      <Field Name="VerticalWallWidth" Hidden="true" />
+      <Field Name="VerticalWallY" Hidden="true" />
+      <Method Name="WallFactory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACQAgAgAAIAAEAAAEAAASAAAAAAAIAIBQAg=</HashCode>
+      <FileName>GameObjectSystem\Factories\WallFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.Scene" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQkICoBMIAgBiiYgbGACYZAkBEFIAAQIpDwCAUEYAA=</HashCode>
+      <FileName>SceneSystem\Scene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.GameScene" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABACAEAAAACAAgAAABAIAAAAEAgAAABBAAUCAAAA=</HashCode>
+      <FileName>SceneSystem\GameScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

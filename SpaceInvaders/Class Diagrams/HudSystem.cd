@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.HudSystem.HudDisplayer">
+    <Position X="4.75" Y="1" Width="2.25" />
+    <Members>
+      <Field Name="CreditZeroX" Hidden="true" />
+      <Field Name="HighTextY" Hidden="true" />
+      <Method Name="HudDisplayer" Hidden="true" />
+      <Field Name="iconLives" Hidden="true" />
+      <Field Name="IconLivesSpacing" Hidden="true" />
+      <Field Name="IconLivesX" Hidden="true" />
+      <Field Name="IconLivesY" Hidden="true" />
+      <Field Name="LabelGameOverX" Hidden="true" />
+      <Field Name="LabelGameOverY" Hidden="true" />
+      <Field Name="LabelHighscoreX" Hidden="true" />
+      <Field Name="LabelP1X" Hidden="true" />
+      <Field Name="LabelP2X" Hidden="true" />
+      <Field Name="LabelPressEnterX" Hidden="true" />
+      <Field Name="LabelPressEnterY" Hidden="true" />
+      <Field Name="LowTextY" Hidden="true" />
+      <Field Name="MostlyHighTextY" Hidden="true" />
+      <Field Name="TextHighscoreX" Hidden="true" />
+      <Field Name="TextLivesX" Hidden="true" />
+      <Field Name="TextScoreP1X" Hidden="true" />
+      <Field Name="TextScoreP2X" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>A2QBAACAgAABg4AAhgBAAAQEABRABAQCAIYAggeAAAM=</HashCode>
+      <FileName>HudSystem\HudDisplayer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="disposableHudTextList" />
+      <Field Name="hudTextList" />
+      <Field Name="iconLives" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.HudIcon">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="HudIcon" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEBgAAAAAAAAAAAAAACACABAJgAAAABAA=</HashCode>
+      <FileName>HudSystem\HudIcon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="spriteIcon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.HudText">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="HudText" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAgABgAAAAAAAAAAAgAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>HudSystem\HudText.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="internalAzulText" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.PlayerOneHudDisplayer">
+    <Position X="1.5" Y="7.5" Width="2" />
+    <Members>
+      <Method Name="PlayerOneHudDisplayer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAEAAAA=</HashCode>
+      <FileName>HudSystem\PlayerOneHudDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.PlayerSelectHudDisplayer">
+    <Position X="6" Y="7.5" Width="2" />
+    <Members>
+      <Field Name="LabelChooseX" Hidden="true" />
+      <Field Name="LabelChooseY" Hidden="true" />
+      <Field Name="LabelForPlayer1Y" Hidden="true" />
+      <Field Name="LabelForPlayer2Y" Hidden="true" />
+      <Field Name="LabelForPlayerX" Hidden="true" />
+      <Field Name="LabelPressX" Hidden="true" />
+      <Field Name="LabelPressY" Hidden="true" />
+      <Method Name="PlayerSelectHudDisplayer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAggABAAAAAARAgAAAAAAAAAQAAAAAAAEAAAA=</HashCode>
+      <FileName>HudSystem\PlayerSelectHudDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.PlayerTwoHudDisplayer">
+    <Position X="8.25" Y="7.5" Width="2" />
+    <Members>
+      <Method Name="PlayerTwoHudDisplayer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAEAAAA=</HashCode>
+      <FileName>HudSystem\PlayerTwoHudDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.StartScreenHudDisplayer">
+    <Position X="3.75" Y="7.5" Width="2" />
+    <Members>
+      <Field Name="IconPointsX" Hidden="true" />
+      <Field Name="LabelInvadersX" Hidden="true" />
+      <Field Name="LabelInvadersY" Hidden="true" />
+      <Field Name="LabelPlayX" Hidden="true" />
+      <Field Name="LabelPlayY" Hidden="true" />
+      <Field Name="LabelPointsX" Hidden="true" />
+      <Field Name="LabelPointsY" Hidden="true" />
+      <Field Name="LabelScoreX" Hidden="true" />
+      <Field Name="LabelScoreY" Hidden="true" />
+      <Method Name="StartScreenHudDisplayer" Hidden="true" />
+      <Field Name="TableLineSpacing" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABACgAABABkACMAABAAAAQAAAAgAQAQAAAAAEBAAA=</HashCode>
+      <FileName>HudSystem\StartScreenHudDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul.SpriteFont">
+    <Position X="14.5" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="SpriteFont" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="9" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteEntity" Collapsed="true">
+    <Position X="10.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABEAABBgAAAAJAEAACABAAAAAAAEAAACRABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

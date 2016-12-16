@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.ImageSystem.ImageManager">
+    <Position X="0.5" Y="2.75" Width="1.75" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Method Name="ImageManager" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Method Name="LookupImageMapping" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedFromPoint="true">
+      <Path>
+        <Point X="1.375" Y="1.062" />
+        <Point X="1.375" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIABAAAAAABIAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>ImageSystem\ImageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.ImageSystem.Image">
+    <Position X="3" Y="2.75" Width="1.75" />
+    <Members>
+      <Method Name="DeclareChangeResolved" Hidden="true" />
+      <Property Name="DidImageChange" Hidden="true" />
+      <Property Name="DidTextureChange" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Field Name="h" Hidden="true" />
+      <Method Name="Image" Hidden="true" />
+      <Property Name="ImageMapping" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Field Name="s" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Field Name="stChanged" Hidden="true" />
+      <Field Name="t" Hidden="true" />
+      <Field Name="texChanged" Hidden="true" />
+      <Property Name="Texture" Hidden="true" />
+      <Field Name="w" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.ImageSystem.Image.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ImageSystem\ImageNode.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAUABAAABAAAAAAAQEAIACAEBgAARK4AYASEBAA=</HashCode>
+      <FileName>ImageSystem\ImageNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="imageMapping" />
+      <Field Name="texture" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Azul.Rect" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.TextureSystem.Texture" Collapsed="true">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAABAAAAAQAAACAEAAAAAAAAQAgABAA=</HashCode>
+      <FileName>TextureSystem\TextureNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

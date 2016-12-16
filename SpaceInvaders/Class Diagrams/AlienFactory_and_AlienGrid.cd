@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Creates 1 AlienCoordinator, 11 AlienColumns, and 55 Aliens. It also links the PCS tree with the AlienCoordinator at the top, columns below it, and Aliens below the columns.">
+    <Position X="10.571" Y="6.219" Height="1.003" Width="2.553" />
+  </Comment>
+  <Comment CommentText="Individual Aliens essentially do nothing (for Milestone 1)">
+    <Position X="2.01" Y="10.091" Height="0.75" Width="1.513" />
+  </Comment>
+  <Comment CommentText="AnimationMotion can animate the position of any GameObject, but here, only one animates the AlienCoordinator">
+    <Position X="11.851" Y="3.84" Height="0.906" Width="1.992" />
+  </Comment>
+  <Comment CommentText="A data structure with a parent, sibling, and child pointer">
+    <Position X="3.656" Y="1.364" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="When GameObject calls SetPosition(), it changes its position and it offsets positions for all of it's PCS children as well.">
+    <Position X="1.744" Y="4.082" Height="1.052" Width="1.648" />
+  </Comment>
+  <Comment CommentText="One AlienColumn holds 5 Aliens as PCS children">
+    <Position X="4.365" Y="9.439" Height="0.75" Width="1.2" />
+  </Comment>
+  <Comment CommentText="AlienCoordinator decides when to move horizontally or when to move down based of when the left-most or right-most AlienColumn hits side walls.">
+    <Position X="7.301" Y="10.368" Height="1.458" Width="1.7" />
+  </Comment>
+  <Comment CommentText="← Creates">
+    <Position X="12.936" Y="8.486" Height="0.331" Width="0.933" />
+  </Comment>
+  <Comment CommentText="AlienRespawner is created when all the aliens die">
+    <Position X="13.986" Y="6.673" Height="0.75" Width="1.452" />
+  </Comment>
+  <Comment CommentText="       ← Creates">
+    <Position X="9.37" Y="8.295" Height="0.331" Width="1.236" />
+  </Comment>
+  <Class Name="SpaceInvaders.GameObjectSystem.Factories.AlienFactory">
+    <Position X="10.75" Y="7.5" Width="2" />
+    <Members>
+      <Method Name="AddAlienRootToCollisionSystem" Hidden="true" />
+      <Method Name="AlienFactory" Hidden="true" />
+      <Field Name="batchName" Hidden="true" />
+      <Field Name="CollisonColor" Hidden="true" />
+      <Method Name="LoadResources" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AICEAAAAQADAAEAAAAEAACgGCAAAAEAAAAAAIAhAAgA=</HashCode>
+      <FileName>GameObjectSystem\Factories\AlienFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.AlienColumn">
+    <Position X="4.25" Y="7.25" Width="1.5" />
+    <Members>
+      <Method Name="AlienColumn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\AlienColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObject">
+    <Position X="3.5" Y="3.25" Width="1.75" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Property Name="BatchName" Hidden="true" />
+      <Property Name="Collider" Hidden="true" />
+      <Property Name="Color" Hidden="true" />
+      <Method Name="ctor" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Property Name="Height" Hidden="true" />
+      <Property Name="Id" Hidden="true" />
+      <Property Name="ObjectName" Hidden="true" />
+      <Method Name="OnMove" Hidden="true" />
+      <Method Name="OnPCSNewChild" Hidden="true" />
+      <Method Name="ReevaluateCollider" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="ResetAnimator" Hidden="true" />
+      <Method Name="SetColor" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="SetSprite" Hidden="true" />
+      <Property Name="SpriteReference" Hidden="true" />
+      <Method Name="UpdateInternalSpriteData" Hidden="true" />
+      <Property Name="Width" Hidden="true" />
+      <Property Name="X" Hidden="true" />
+      <Property Name="Y" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObjectSystem.GameObject.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjectSystem\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="SpaceInvaders.PCSTreeNode" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="2.812" />
+        <Point X="4.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAQDAAACDCARJAAQAAAAIFAAwBAECkDQAIhg0AAAYAA=</HashCode>
+      <FileName>GameObjectSystem\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.PCSTreeNode" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAIAAEAQEIBAAACAwAAAAAAAAABAAAAAAAAAQAA=</HashCode>
+      <FileName>PCSTreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.AlienCoordinator">
+    <Position X="7" Y="6.25" Width="2.25" />
+    <Members>
+      <Field Name="_initX" Hidden="true" />
+      <Field Name="_initY" Hidden="true" />
+      <Field Name="_numCols" Hidden="true" />
+      <Field Name="_xGap" Hidden="true" />
+      <Method Name="AlienCoordinator" Hidden="true" />
+      <Field Name="alienLaserRoot" Hidden="true" />
+      <Property Name="AlienLaserRoot" Hidden="true" />
+      <Field Name="AnimatorCrab" Hidden="true" />
+      <Field Name="AnimatorOctopus" Hidden="true" />
+      <Field Name="AnimatorSquid" Hidden="true" />
+      <Field Name="columns" Hidden="true" />
+      <Property Name="Columns" Hidden="true" />
+      <Method Name="CreateAllColumns" Hidden="true" />
+      <Field Name="currSoundIndex" Hidden="true" />
+      <Property Name="DropSteps" Hidden="true" />
+      <Field Name="maxAllowedLasers" Hidden="true" />
+      <Field Name="numberOfAliens" Hidden="true" />
+      <Property Name="NumberOfColumns" Hidden="true" />
+      <Field Name="numberOfLasers" Hidden="true" />
+      <Method Name="OnMove" Hidden="true" />
+      <Field Name="OriginalInterval" Hidden="true" />
+      <Field Name="OriginalMaxAllowedLasers" Hidden="true" />
+      <Field Name="OriginalSteps" Hidden="true" />
+      <Method Name="PlayNextMarchingSound" Hidden="true" />
+      <Method Name="ProgressionIncreaseFormula" Hidden="true" />
+      <Property Name="ProgressionSteps" Hidden="true" />
+      <Property Name="ProgressionTime" Hidden="true" />
+      <Field Name="ProI_Coefficient" Hidden="true" />
+      <Field Name="ProI_ExpBase" Hidden="true" />
+      <Field Name="ProI_Threshold" Hidden="true" />
+      <Method Name="ResetSpriteAnimationIntervals" Hidden="true" />
+      <Method Name="ResyncFrameAnimation" Hidden="true" />
+      <Field Name="SI_Coefficient" Hidden="true" />
+      <Field Name="SI_ExpBase" Hidden="true" />
+      <Field Name="sndAlienA" Hidden="true" />
+      <Field Name="sndAlienB" Hidden="true" />
+      <Field Name="sndAlienC" Hidden="true" />
+      <Field Name="sndAlienD" Hidden="true" />
+      <Method Name="StartMovingAgain" Hidden="true" />
+      <Method Name="StopMoving" Hidden="true" />
+      <Field Name="TotalAliens" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjectSystem.GameObjectMotionAnimated" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.688" Y="5.175" />
+        <Point X="8.688" Y="5.875" />
+        <Point X="8.688" Y="5.875" />
+        <Point X="8.688" Y="6.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>oIQxAAARJCBAAQJAAgoYEICGAQAAAAEQDEADFBkQgGA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\AlienCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="columns" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjects.Aliens">
+    <Position X="2" Y="7.25" Width="1.5" />
+    <Members>
+      <Method Name="Aliens" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAQFAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjects\Aliens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AnimationSystem.AnimationMotion" Collapsed="true">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <AssociationLine Name="Target" Type="SpaceInvaders.GameObjectSystem.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.062" Y="4" />
+        <Point X="11.062" Y="3.428" />
+        <Point X="5.25" Y="3.428" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAABAAAQAAAoDQAAMAAAAAAAQAAAAAABAI=</HashCode>
+      <FileName>AnimationSystem\AnimationMotion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Target" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjectMotionAnimated">
+    <Position X="7.25" Y="3.75" Width="2" />
+    <Members>
+      <Field Name="animator" Hidden="true" />
+      <Method Name="GameObjectMotionAnimated" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjectMotionAnimated.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Animator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.AlienRespawner">
+    <Position X="14" Y="7.75" Width="1.5" />
+    <Members>
+      <Method Name="~AlienRespawner" Hidden="true" />
+      <Method Name="AlienRespawner" Hidden="true" />
+      <Field Name="timedEvent" Hidden="true" />
+      <Property Name="TimerEvent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjectSystem\AlienRespawner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

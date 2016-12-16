@@ -1,0 +1,3 @@
+Credit to:
+	Barathy Rangarajan - for invaders-from-space.tga
+	Brian Keschinger - for pixel mapping of invaders-from-space.tga

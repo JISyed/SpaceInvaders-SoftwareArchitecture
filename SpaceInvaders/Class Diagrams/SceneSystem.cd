@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.SceneSystem.GameScene">
+    <Position X="7.5" Y="10.25" Width="2" />
+    <Members>
+      <Method Name="GameScene" Hidden="true" />
+      <Method Name="SetPlayerLaserRoot" Hidden="true" />
+      <Method Name="SetPlayerRoot" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAABACAEAAAACAAgAAABAIAAAAEAgAAABBAAUCAAAA=</HashCode>
+      <FileName>SceneSystem\GameScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.GameSessionData">
+    <Position X="4.25" Y="4.75" Width="1.75" />
+    <Members>
+      <Field Name="BreakTime" Hidden="true" />
+      <Method Name="GameSessionData" Hidden="true" />
+      <Field Name="level" Hidden="true" />
+      <Field Name="lives" Hidden="true" />
+      <Field Name="MAX_LIVES" Hidden="true" />
+      <Field Name="MAX_SCORE" Hidden="true" />
+      <Field Name="score" Hidden="true" />
+      <Field Name="STARTING_LIVES" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAEAgAAgAEEAIAAAAAIMgAAAjAAAQCAAAAAA=</HashCode>
+      <FileName>SceneSystem\GameSessionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.Scene">
+    <Position X="7.25" Y="2.5" Width="2.5" />
+    <Members>
+      <Field Name="alienCoordinatorId" Hidden="true" />
+      <Property Name="AlienCoordinatorId" Hidden="true" />
+      <Field Name="collisionBatch" Hidden="true" />
+      <Field Name="gameData" Hidden="true" />
+      <Field Name="hudDisplay" Hidden="true" />
+      <Field Name="isLoaded" Hidden="true" />
+      <Field Name="isMarkedForRemoval" Hidden="true" />
+      <Field Name="isMarkedForSceneChange" Hidden="true" />
+      <Field Name="isPaused" Hidden="true" />
+      <Field Name="lastAzulTime" Hidden="true" />
+      <Field Name="manAnimationFlip" Hidden="true" />
+      <Field Name="manAnimationFrame" Hidden="true" />
+      <Field Name="manAnimationMotion" Hidden="true" />
+      <Field Name="manCollisionPair" Hidden="true" />
+      <Field Name="manGameObject" Hidden="true" />
+      <Field Name="manSpriteBatch" Hidden="true" />
+      <Field Name="manSpriteColProxy" Hidden="true" />
+      <Field Name="manSpriteProxy" Hidden="true" />
+      <Field Name="manTimedEvent" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+      <Method Name="SetAlienCoordiatorId" Hidden="true" />
+      <Method Name="SetUfoId" Hidden="true" />
+      <Field Name="ufoId" Hidden="true" />
+      <Property Name="UfoId" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.SceneSystem.Scene.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SceneSystem\Scene.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQkICoBMIAgBiiYgbGACYZAkBEFIAAQIpDwCAUEYAA=</HashCode>
+      <FileName>SceneSystem\Scene.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ManagerForAnimationFlip" />
+      <Property Name="ManagerForAnimationFrame" />
+      <Property Name="ManagerForAnimationMotion" />
+      <Property Name="ManagerForCollisionPair" />
+      <Property Name="ManagerForGameObject" />
+      <Property Name="ManagerForSpriteBatch" />
+      <Property Name="ManagerForSpriteProxy" />
+      <Property Name="ManagerForSpriteCollisonProxy" />
+      <Property Name="ManagerForTimedEvent" />
+      <Property Name="GameData" />
+      <Property Name="HudDisplay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.SceneHolder">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SceneHolder" Hidden="true" />
+      <Property Name="SceneRef" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABEAAAAAAAIAAAAAAAAAAAACAAAAABAA=</HashCode>
+      <FileName>SceneSystem\SceneHolder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="scene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.SceneManager">
+    <Position X="1" Y="2.5" Width="2" />
+    <Members>
+      <Field Name="activeScene" Hidden="true" />
+      <Field Name="cachedPlayerOneScore" Hidden="true" />
+      <Field Name="cachedPlayerTwoScore" Hidden="true" />
+      <Field Name="colliderToggleKey" Hidden="true" />
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="globalHighScore" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Field Name="internalClock" Hidden="true" />
+      <Method Name="SceneManager" Hidden="true" />
+      <Method Name="SetColliderToggleKey" Hidden="true" />
+      <Method Name="SetNumberOfPlayers" Hidden="true" />
+      <Field Name="totalNumberOfPlayers" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.SceneSystem.SceneManager.NumberOfPlayers">
+        <TypeIdentifier>
+          <NewMemberFileName>SceneSystem\SceneManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAUCABAAhIAwAgCAAQADKBAAghBEAyIAIQAAAAAAAAA=</HashCode>
+      <FileName>SceneSystem\SceneManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ActiveScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.Scenes.P1Scene">
+    <Position X="6.25" Y="14.5" Width="2" />
+    <Members>
+      <Method Name="P1Scene" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAgBEAAAAAAAABAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>SceneSystem\Scenes\P1Scene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.Scenes.P2Scene">
+    <Position X="8.75" Y="14.5" Width="2" />
+    <Members>
+      <Method Name="P2Scene" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAgBEAAAAAAAABAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>SceneSystem\Scenes\P2Scene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.Scenes.PlayerSelectScreen">
+    <Position X="4.25" Y="10.25" Width="2" />
+    <Members>
+      <Method Name="PlayerSelectScreen" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAgBEAAAACAAABAAAAYAAAQAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>SceneSystem\Scenes\PlayerSelectScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SceneSystem.Scenes.StartScene">
+    <Position X="10.75" Y="10.25" Width="2" />
+    <Members>
+      <Method Name="StartScene" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAgBEAAAACAAABAAAAYAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>SceneSystem\Scenes\StartScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AnimationSystem.AnimationFlipManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIBIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>AnimationSystem\AnimationFlipManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AnimationSystem.AnimationFrameManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIBIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>AnimationSystem\AnimationFrameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionSystem.CollisonPairManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAABIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>CollisionSystem\CollisonPairManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AnimationSystem.AnimationMotionManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAIBIAEAgAQAAIAAAAAA=</HashCode>
+      <FileName>AnimationSystem\AnimationMotionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectSystem.GameObjectManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAIBIAAAgAQAAAAAAAAA=</HashCode>
+      <FileName>GameObjectSystem\GameObjectManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteBatchSystem.SpriteBatchManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIBIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>SpriteBatchSystem\SpriteBatchManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollisonProxyManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollisonProxyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteProxyManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAABIAEAgAQAAAAAAgAA=</HashCode>
+      <FileName>SpriteSystem\SpriteProxyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.TimerSystem.TimedEventManager" Collapsed="true" HideInheritanceLine="true">
+    <Position X="12.25" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IBQgEAAAAAAAAAAAAAAAAAAAAAJAAEAgAQAiAABEIAA=</HashCode>
+      <FileName>TimerSystem\TimedEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.HudSystem.HudDisplayer" Collapsed="true">
+    <Position X="4.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>A2QBAACAgAABg4AAhgBAAAQEABRABAQCAIYAggeAAAM=</HashCode>
+      <FileName>HudSystem\HudDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

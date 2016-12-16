@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.SpriteSystem.Sprite">
+    <Position X="8.75" Y="3.75" Width="1.75" />
+    <Members>
+      <Field Name="color" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="SetColor" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="Sprite" Hidden="true" />
+      <Method Name="SpriteReset" Hidden="true" />
+      <Field Name="x" Hidden="true" />
+      <Field Name="y" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.SpriteSystem.Sprite.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SpriteSystem\Sprite.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="SpaceInvaders.ListNode" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.562" Y="2.062" />
+        <Point X="9.562" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAABAAAAAAAAEAxCAAAhgwAAAYAA=</HashCode>
+      <FileName>SpriteSystem\Sprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteEntity">
+    <Position X="5.75" Y="8.25" Width="1.75" />
+    <Members>
+      <Field Name="angle" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Field Name="imageMapping" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Field Name="scaleX" Hidden="true" />
+      <Field Name="scaleY" Hidden="true" />
+      <Field Name="sprite" Hidden="true" />
+      <Method Name="SpriteEntity" Hidden="true" />
+      <Method Name="UpdateImageAndTexture" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.SpriteSystem.Sprite" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.625" Y="7.377" />
+        <Point X="9.625" Y="7.875" />
+        <Point X="6.625" Y="7.875" />
+        <Point X="6.625" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="ImageMap" Type="SpaceInvaders.ImageSystem.Image" FixedFromPoint="true">
+      <Path>
+        <Point X="5.75" Y="9.125" />
+        <Point X="4.75" Y="9.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABEAABBgAAAAJAEAACABAAAAAAAEAAACRABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AzulSprite" />
+      <Property Name="ImageMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteProxy">
+    <Position X="8.75" Y="8.25" Width="1.75" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Property Name="ModelSprite" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SpriteProxy" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.SpriteSystem.Sprite" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.625" Y="7.377" />
+        <Point X="9.625" Y="7.875" />
+        <Point X="9.625" Y="7.875" />
+        <Point X="9.625" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAABAAAQAAAAEAABAAAAAAAAABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="modelSprite" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ImageSystem.Image" Collapsed="true" HideInheritanceLine="true">
+    <Position X="3.25" Y="8.75" Width="1.5" />
+    <AssociationLine Name="Texture" Type="SpaceInvaders.TextureSystem.Texture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.027" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAUABAAABAAAAAAAQEAIACAEBgAARK4AYASEBAA=</HashCode>
+      <FileName>ImageSystem\ImageNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Texture" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.TextureSystem.Texture" Collapsed="true" HideInheritanceLine="true">
+    <Position X="1" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAABAAAAAQAAACAEAAAAAAAAQAgABAA=</HashCode>
+      <FileName>TextureSystem\TextureNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteEntityManager">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Field Name="nullSprite" Hidden="true" />
+      <Method Name="SpriteEntityManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAABAAAAAABIAEAAAQAAAAAAAEA=</HashCode>
+      <FileName>SpriteSystem\SpriteManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteProxyManager">
+    <Position X="3.5" Y="1.75" Width="2" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="nullSpriteProxy" Hidden="true" />
+      <Method Name="SpriteProxyManager" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.AbstractManager" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.375" />
+        <Point X="4.5" Y="1.375" />
+        <Point X="4.5" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAABIAEAgAQAAAAAAgAA=</HashCode>
+      <FileName>SpriteSystem\SpriteProxyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.AbstractManager" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="activeList" Type="SpaceInvaders.LinkList">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.032" Y="0" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="reservedList" Type="SpaceInvaders.LinkList">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.913" Y="0.012" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAEABYEAAACAIABQQEAEAABABAAAAQCAAAEAAAA=</HashCode>
+      <FileName>AbstractManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeList" />
+      <Field Name="reservedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.LinkList" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgEAAgIAAgAAAAAAAAACAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LinkList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="head" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.ListNode" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAJAAAAACAAgAAAAAAAAAAAABBAAIABCA=</HashCode>
+      <FileName>ListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul.Sprite2D" Collapsed="true">
+    <Position X="3.25" Y="10" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollisionManager">
+    <Position X="2" Y="4.25" Width="2" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Method Name="SpriteCollisionManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAABIAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollisionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollisonProxyManager">
+    <Position X="4.75" Y="4.25" Width="2.25" />
+    <Members>
+      <Method Name="FillReserve" Hidden="true" />
+      <Method Name="SpriteCollisonProxyManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABIAEAgAQAAAAAAAAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollisonProxyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollision">
+    <Position X="10" Y="11.25" Width="1.75" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SetRectData" Hidden="true" />
+      <Method Name="SpriteCollision" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAABAEABgAQAABAIEAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollision.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rect" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.SpriteCollisionProxy">
+    <Position X="13" Y="11.25" Width="1.75" />
+    <Members>
+      <Method Name="GetName" Hidden="true" />
+      <Field Name="height" Hidden="true" />
+      <Field Name="modelSprite" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Method Name="SpriteCollisionProxy" Hidden="true" />
+      <Field Name="width" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgQAQABAAAQAAAAEAABAAAAAAAEABAA=</HashCode>
+      <FileName>SpriteSystem\SpriteCollisionProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ModelSprite" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.RectDrawable">
+    <Position X="7.75" Y="12.25" Width="1.5" />
+    <Members>
+      <Method Name="ctor" Hidden="true" />
+      <Field Name="halfHeight" Hidden="true" />
+      <Field Name="halfWidth" Hidden="true" />
+      <Field Name="height" Hidden="true" />
+      <Field Name="lineColor" Hidden="true" />
+      <Method Name="RectDrawable" Hidden="true" />
+      <Method Name="SetRect" Hidden="true" />
+      <Field Name="width" Hidden="true" />
+      <Field Name="x" Hidden="true" />
+      <Field Name="y" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQgAAAACAAABAgQAQAAAAAAAgAAAAgAAAABkAEEoYAA=</HashCode>
+      <FileName>RectDrawable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="outline" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Azul.Line" Collapsed="true">
+    <Position X="5.5" Y="13" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.SpriteSystem.NullSpriteEntity" Collapsed="true">
+    <Position X="5.75" Y="11.25" Width="1.5" />
+    <InheritanceLine Type="SpaceInvaders.SpriteSystem.SpriteEntity" FixedFromPoint="true">
+      <Path>
+        <Point X="6.5" Y="10.896" />
+        <Point X="6.5" Y="11.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAABAAAAAAAAAAQAAAAAAQAAABAA=</HashCode>
+      <FileName>SpriteSystem\NullSpriteEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

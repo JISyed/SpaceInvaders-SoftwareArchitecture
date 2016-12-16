@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="← What the user gets">
+    <Position X="2.458" Y="0.969" Height="0.344" Width="1.594" />
+  </Comment>
+  <Comment CommentText="Calls&#xD;&#xA;   ↓">
+    <Position X="1.156" Y="2.229" Height="0.479" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Indexer [Azul.AZUL_KEYS]">
+    <Position X="4.246" Y="4.386" Height="0.333" Width="1.628" />
+  </Comment>
+  <Comment CommentText="Initialize() is called in Game.Initialize()">
+    <Position X="1.021" Y="5.51" Height="0.558" Width="1.233" />
+  </Comment>
+  <Class Name="SpaceInvaders.InputSystem.Input">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InputSystem\Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.InputSystem.InputKey">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="InputKey" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAgAAAAAIAAAAAQAIAAMAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InputSystem\InputKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.InputSystem.InputKeyController">
+    <Position X="0.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAgAAQAAAAAAAAQAIAAAAAABAAAAAABAAAA=</HashCode>
+      <FileName>InputSystem\InputKeyController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="keyMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.InputSystem.InputKeyListNode">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="InputKeyListNode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InputSystem\InputKeyListNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="inputKey" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.InputSystem.InputKeyMap">
+    <Position X="3.5" Y="3" Width="1.75" />
+    <Members>
+      <Method Name="AddIterationNode" Hidden="true" />
+      <Method Name="GetLargestValueInAzulKeysEnum" Hidden="true" />
+      <Method Name="InputKeyMap" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQQAAAACAAAAQAACAABEAAAAIAAAAAAEIAAACAAAgA=</HashCode>
+      <FileName>InputSystem\InputKeyMap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="hashBucket" />
+      <Field Name="iterationListHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
